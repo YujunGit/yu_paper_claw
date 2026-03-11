@@ -233,9 +233,10 @@ If git access and permissions are available:
 1. write or update the markdown files
 2. inspect what changed
 3. make sure the content is coherent and not duplicated
-4. git add the relevant files
-5. git commit with a clean, descriptive message
-6. git push to the intended branch
+4. before committing, ensure this repo uses the bot identity `xiaoxiaoyu-bot <bot@local>` so the user's commits remain distinguishable
+5. git add the relevant files
+6. git commit with a clean, descriptive message
+7. git push to the intended branch
 
 Default commit message style:
 
