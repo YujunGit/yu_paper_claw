@@ -121,3 +121,5 @@ The detailed operating instructions for the scouting workflow live in:
 - [`TASK.md`](./TASK.md)
 
 That file defines the required summary format, quality bar, paper selection rules, and output conventions.
+
+<!-- commit identity check: XiaoXiaoYu -->
