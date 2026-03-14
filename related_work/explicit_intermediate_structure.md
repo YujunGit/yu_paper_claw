@@ -34,6 +34,21 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: modularity is enforced through reusable, structure-preserving interfaces.
 - What it does not solve: real transfer beyond curated PDE recombination remains to be tested.
 
+### VisualPredicator (2025)
+- Positioning: learned neuro-symbolic predicates as an abstract planning interface.
+- What it gets right: tries to learn the abstraction layer itself and judges it by sample efficiency, OOD planning, and interpretability.
+- What it does not solve: robustness under noisy real-world perception remains unclear.
+
+### RISE (2026)
+- Positioning: robot policy improvement via a compositional world model split into dynamics prediction and progress evaluation.
+- What it gets right: decomposition corresponds to distinct control functions rather than decorative modularity.
+- What it does not solve: “compositional” here may be more functional than formally compositional, and baseline fairness needs scrutiny.
+
+### Object-Centric Representations Better At Compositional Generalization? (2026)
+- Positioning: evaluation paper testing when decomposed visual representations actually help.
+- What it gets right: makes a conditional claim that structure helps most under limited data, diversity, or compute.
+- What it does not solve: transfer from controlled visual worlds to embodied planning or generation.
+
 ## Working heuristics for future scouting
 Prefer papers that do at least two of the following:
 - make the intermediate structure executable or constraining,
