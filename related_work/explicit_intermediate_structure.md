@@ -49,6 +49,26 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: makes a conditional claim that structure helps most under limited data, diversity, or compute.
 - What it does not solve: transfer from controlled visual worlds to embodied planning or generation.
 
+### PlayWorld (2026)
+- Positioning: robot world modeling via autonomous play data rather than success-biased demonstrations.
+- What it gets right: treats data coverage as part of the mechanism, especially for contact-rich dynamics and failure-heavy rollouts.
+- What it does not solve: coverage is broader, but still shaped by the proposer/executor behavior prior and hardware collection constraints.
+
+### H-WM (2026)
+- Positioning: hierarchical world model that combines symbolic task-level transition prediction with latent visual subgoal grounding.
+- What it gets right: the intermediate structure has a concrete job—keeping long-horizon plans coherent while still grounding them for control.
+- What it does not solve: much of the symbolic interface is still curated and annotated rather than learned.
+
+### C3 (2025/2026)
+- Positioning: uncertainty-calibrated controllable video world models.
+- What it gets right: asks whether the world model knows when its own rollout is untrustworthy, which is a missing piece in many planning papers.
+- What it does not solve: uncertainty estimates are only useful if they change downstream decision-making, not just visualization.
+
+### NSGGM (2026)
+- Positioning: neural proposal plus symbolic assembly for graph generation with hard guarantees.
+- What it gets right: uses symbolic machinery where exact validity and user constraints actually matter.
+- What it does not solve: solver-backed exactness may become expensive or brittle as structured outputs grow more complex.
+
 ## Working heuristics for future scouting
 Prefer papers that do at least two of the following:
 - make the intermediate structure executable or constraining,
