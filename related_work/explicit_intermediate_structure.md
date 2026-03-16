@@ -69,6 +69,21 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: uses symbolic machinery where exact validity and user constraints actually matter.
 - What it does not solve: solver-backed exactness may become expensive or brittle as structured outputs grow more complex.
 
+### Interactive World Simulator (2026)
+- Positioning: action-conditioned latent video world model used as a practical surrogate environment for robot training and evaluation.
+- What it gets right: asks whether a world model is fast, stable, and faithful enough to support data generation and policy ranking, not just visual prediction.
+- What it does not solve: physical consistency is still mediated through latent video prediction rather than explicit object/contact state.
+
+### SimRecon (2026)
+- Positioning: compositional 3D reconstruction aimed at simulation-ready assembly from real videos.
+- What it gets right: treats perception-to-generation and generation-to-simulation interfaces as real bottlenecks and gives structure an executable role in scene assembly.
+- What it does not solve: pipeline errors can still compound, and simulator plausibility is not equivalent to full real-world physical fidelity.
+
+### MM-CondChain (2026)
+- Positioning: benchmark for visually grounded deep compositional reasoning built around a verifiable programmatic intermediate representation.
+- What it gets right: uses intermediate structure for mechanical verification and tests deep chained conditions rather than shallow composition.
+- What it does not solve: it is evaluation infrastructure, not a mechanism for improving model reasoning or grounding.
+
 ## Working heuristics for future scouting
 Prefer papers that do at least two of the following:
 - make the intermediate structure executable or constraining,
