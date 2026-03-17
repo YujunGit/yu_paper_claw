@@ -84,6 +84,21 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: uses intermediate structure for mechanical verification and tests deep chained conditions rather than shallow composition.
 - What it does not solve: it is evaluation infrastructure, not a mechanism for improving model reasoning or grounding.
 
+### CoWVLA / Chain of World (2026)
+- Positioning: VLA pretraining built around structure–motion disentanglement and a continuous latent motion chain instead of dense future-frame reconstruction.
+- What it gets right: treats motion as the thing worth modeling, and uses the intermediate structure to reduce redundancy while preserving temporal reasoning for control.
+- What it does not solve: the latent interface is still soft and only indirectly interpretable, so claims about world understanding should stay modest.
+
+### FutureCAD (2026)
+- Positioning: LLM-generated CAD programs with a separate text-to-B-Rep grounding module for resolving primitive references during execution.
+- What it gets right: the intermediate structure is executable, state-dependent, and necessary; high-level intent and low-level entity binding are cleanly separated.
+- What it does not solve: the mechanism is strong but domain-specific, and transfer beyond CAD will require additional grounding machinery.
+
+### Reasoning Core (2026)
+- Positioning: procedural symbolic-data infrastructure with solver-backed verification and broad formal-task distributions.
+- What it gets right: argues that explicit structure in training data should be distributionally broad, difficulty-controlled, and reusable for both supervised learning and verifiable reward.
+- What it does not solve: it is still mostly a training/evaluation substrate, not direct evidence that symbolic pretraining transfers cleanly into messy embodied or multimodal reasoning.
+
 ## Working heuristics for future scouting
 Prefer papers that do at least two of the following:
 - make the intermediate structure executable or constraining,
