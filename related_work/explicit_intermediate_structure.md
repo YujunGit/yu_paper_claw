@@ -99,6 +99,21 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: argues that explicit structure in training data should be distributionally broad, difficulty-controlled, and reusable for both supervised learning and verifiable reward.
 - What it does not solve: it is still mostly a training/evaluation substrate, not direct evidence that symbolic pretraining transfers cleanly into messy embodied or multimodal reasoning.
 
+### Seoul World Model / SWM (2026)
+- Positioning: retrieval-grounded video world simulation tied to a real city rather than a fully imagined environment.
+- What it gets right: makes grounding operational through concrete mechanisms for temporal mismatch, sparse-view coverage, and rollout re-anchoring.
+- What it does not solve: still primarily video-centric and only partially addresses explicit dynamic state, object persistence, or intervention-level causality.
+
+### CompACT / Planning in 8 Tokens (2026)
+- Positioning: ultra-compact discrete tokenization for action-conditioned world-model planning.
+- What it gets right: treats planning state as something that should preserve semantics and spatial relations, not photorealistic baggage, and evaluates the payoff in actual planning latency.
+- What it does not solve: extreme compression may fail in harder partially observed or contact-rich settings where rare details matter.
+
+### WoG / World Guidance (2026)
+- Positioning: world modeling in action-condition space for VLA action generation.
+- What it gets right: defines the predictive target by what the controller actually needs, offering a better compromise than explicit future-image prediction or coarse latent-action codes.
+- What it does not solve: the learned condition space remains implicit, difficult to interpret, and not obviously sufficient for longer-horizon planning beyond action generation.
+
 ## Working heuristics for future scouting
 Prefer papers that do at least two of the following:
 - make the intermediate structure executable or constraining,
