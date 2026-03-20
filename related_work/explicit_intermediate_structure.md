@@ -114,6 +114,21 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: defines the predictive target by what the controller actually needs, offering a better compromise than explicit future-image prediction or coarse latent-action codes.
 - What it does not solve: the learned condition space remains implicit, difficult to interpret, and not obviously sufficient for longer-horizon planning beyond action generation.
 
+### PERSIST / Beyond Pixel Histories (2026)
+- Positioning: interactive world model with a persistent latent 3D world-frame plus explicit camera-query interface.
+- What it gets right: replaces pixel-history memory with state-like geometric memory, making revisitation, off-screen persistence, and geometry-aware editing part of the representation rather than an emergent hope.
+- What it does not solve: currently depends on privileged simulator-side 3D state/camera supervision and does not yet show the harder real-world learning problem.
+
+### WorldStereo (2026)
+- Positioning: camera-guided VDM augmented with global geometric memory and stereo-style retrieved correspondence memory for reconstructible generation.
+- What it gets right: splits memory by function—coarse structure versus fine detail—and ties consistency to downstream 3D reconstruction rather than only perceptual video scores.
+- What it does not solve: this is better understood as geometry-aware controllable generation than as a full interactive world model with persistent latent state or action-grounded dynamics.
+
+### CityGenAgent (2026)
+- Positioning: hierarchical procedural 3D city generation via executable block and building programs.
+- What it gets right: the intermediate structure is real, editable, and aligned with different abstraction levels of the task rather than being prompt-only pseudo-planning.
+- What it does not solve: much of the reward/evaluation stack depends on LLM judging and handcrafted priors, so claims about robust spatial reasoning should be treated cautiously.
+
 ## Working heuristics for future scouting
 Prefer papers that do at least two of the following:
 - make the intermediate structure executable or constraining,
