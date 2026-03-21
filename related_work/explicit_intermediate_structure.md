@@ -129,6 +129,21 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: the intermediate structure is real, editable, and aligned with different abstraction levels of the task rather than being prompt-only pseudo-planning.
 - What it does not solve: much of the reward/evaluation stack depends on LLM judging and handcrafted priors, so claims about robust spatial reasoning should be treated cautiously.
 
+### VGGT-World (2026)
+- Positioning: world modeling as autoregressive prediction in frozen geometry-foundation feature space rather than video latent space.
+- What it gets right: makes geometry the predictive state itself, which is a cleaner and more transferable representational commitment than bolting geometry losses onto RGB generation.
+- What it does not solve: still closer to observational geometry forecasting than to an action-conditioned world model for intervention and control.
+
+### Edit-As-Act (2026)
+- Positioning: 3D scene editing as goal-regressive planning over executable symbolic predicates and edit actions.
+- What it gets right: the intermediate structure directly governs what edits are allowed, what remains unchanged, and how physical plausibility is checked.
+- What it does not solve: domain scope is still narrow, with a hand-designed symbolic language and relatively small benchmark.
+
+### MosaicMem (2026)
+- Positioning: patch-level hybrid spatial memory for controllable video rollouts under revisits and camera motion.
+- What it gets right: chooses an intermediate memory unit that is selective, editable, and geometrically localizable without forcing everything into a brittle explicit 3D cache.
+- What it does not solve: remains a memory/interface advance inside a video-generation stack, not a strong explicit-state model of action-grounded dynamics.
+
 ## Working heuristics for future scouting
 Prefer papers that do at least two of the following:
 - make the intermediate structure executable or constraining,
