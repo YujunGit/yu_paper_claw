@@ -144,6 +144,21 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: chooses an intermediate memory unit that is selective, editable, and geometrically localizable without forcing everything into a brittle explicit 3D cache.
 - What it does not solve: remains a memory/interface advance inside a video-generation stack, not a strong explicit-state model of action-grounded dynamics.
 
+### LPWM (2026)
+- Positioning: self-supervised object-centric world model where latent particles, masks, boxes, and keypoints form the predictive state.
+- What it gets right: decomposition is not just interpretable packaging; it is the thing the dynamics model actually rolls forward and conditions on.
+- What it does not solve: it is still unclear how stable the discovered objects remain under severe occlusion, contact-rich interactions, and open-world clutter.
+
+### Points-to-3D (2026)
+- Positioning: latent 3D generation anchored by observed point-cloud structure instead of pure-noise structural initialization.
+- What it gets right: makes prior geometry a hard part of the latent interface, so controllability comes from preserving known structure and only sampling missing regions.
+- What it does not solve: this is powerful constrained completion, but not yet a broader account of compositional 3D reasoning or uncertainty-aware structure generation.
+
+### PhysGen (2026)
+- Positioning: physics-guided 3D generation through joint shape-and-physics latents plus alternating latent refinement.
+- What it gets right: uses physics to perturb the generative trajectory itself rather than scoring samples after generation is complete.
+- What it does not solve: the mechanism is promising but currently demonstrated in favorable engineering-design settings with relatively explicit physical objectives.
+
 ## Working heuristics for future scouting
 Prefer papers that do at least two of the following:
 - make the intermediate structure executable or constraining,
