@@ -159,6 +159,21 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: uses physics to perturb the generative trajectory itself rather than scoring samples after generation is complete.
 - What it does not solve: the mechanism is promising but currently demonstrated in favorable engineering-design settings with relatively explicit physical objectives.
 
+### LeWorldModel (2026)
+- Positioning: compact JEPA-style latent world model trained end-to-end from pixels with a simple anti-collapse regularizer.
+- What it gets right: treats predictive-state learning and planning efficiency as first-class design goals instead of defaulting to huge frozen visual backbones or pixel-generation objectives.
+- What it does not solve: a stable Gaussianized latent is not automatically a structured or compositional state, and real scaling beyond moderate offline control tasks remains to be shown.
+
+### Geometric Priors via VSA (2026)
+- Positioning: world modeling with explicit algebraic latent transitions implemented through vector-symbolic binding.
+- What it gets right: the transition rule is structured, composable, and interpretable in a literal sense rather than metaphorical “modularity.”
+- What it does not solve: evidence is still confined to a toy discrete environment, so the scaling story to realistic perception and stochastic dynamics is unresolved.
+
+### VEGA-3D / Generation Models Know Space (2026)
+- Positioning: 3D understanding by borrowing intermediate geometric priors from large pretrained video generators.
+- What it gets right: asks where useful geometric information actually lives inside generative backbones and supports that with a multi-view consistency analysis.
+- What it does not solve: despite the “latent world simulator” framing, the method is still better understood as feature fusion for downstream understanding than as a structured world model with explicit state or controllable dynamics.
+
 ## Working heuristics for future scouting
 Prefer papers that do at least two of the following:
 - make the intermediate structure executable or constraining,
