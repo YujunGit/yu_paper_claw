@@ -174,6 +174,21 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: asks where useful geometric information actually lives inside generative backbones and supports that with a multi-view consistency analysis.
 - What it does not solve: despite the “latent world simulator” framing, the method is still better understood as feature fusion for downstream understanding than as a structured world model with explicit state or controllable dynamics.
 
+### Temporal Straightening (2026)
+- Positioning: latent planning via curvature-regularized representation learning.
+- What it gets right: makes a concrete claim that representation quality should be judged by optimization geometry, not just semantic richness or prediction accuracy.
+- What it does not solve: improved local latent geometry is not the same thing as explicit state abstraction, uncertainty handling, or robust long-horizon world modeling.
+
+### DWMR / Discrete World Models via Regularization (2026)
+- Positioning: unsupervised Boolean world-model learning through structural regularization instead of decoder-centric training.
+- What it gets right: treats discreteness, bit independence, and sparse action-local transitions as properties to optimize directly rather than probe after training.
+- What it does not solve: current evidence appears strongest on small combinatorial environments, so the path to realistic perceptual world models is still unclear.
+
+### RelaxFlow (2026)
+- Positioning: amodal 3D generation with asymmetric control over observed versus unobserved structure.
+- What it gets right: recognizes that controllability should be stronger where evidence is known and softer where the model must complete ambiguous geometry.
+- What it does not solve: this is better viewed as a carefully designed conditioning interface for constrained completion than as a broad structured 3D world model.
+
 ## Working heuristics for future scouting
 Prefer papers that do at least two of the following:
 - make the intermediate structure executable or constraining,
