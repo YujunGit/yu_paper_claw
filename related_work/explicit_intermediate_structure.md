@@ -144,6 +144,11 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: chooses an intermediate memory unit that is selective, editable, and geometrically localizable without forcing everything into a brittle explicit 3D cache.
 - What it does not solve: remains a memory/interface advance inside a video-generation stack, not a strong explicit-state model of action-grounded dynamics.
 
+### ActionParty (2026)
+- Positioning: multi-subject video world model with persistent per-subject latent state for explicit action binding.
+- What it gets right: treats action-to-entity assignment as a first-class architectural problem instead of assuming prompts or shared controls will implicitly preserve identity.
+- What it does not solve: the subject state is still a soft latent in 2D game worlds, so the path to explicit object-level 3D state and embodied interaction remains open.
+
 ### LPWM (2026)
 - Positioning: self-supervised object-centric world model where latent particles, masks, boxes, and keypoints form the predictive state.
 - What it gets right: decomposition is not just interpretable packaging; it is the thing the dynamics model actually rolls forward and conditions on.
