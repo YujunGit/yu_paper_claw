@@ -144,6 +144,11 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: chooses an intermediate memory unit that is selective, editable, and geometrically localizable without forcing everything into a brittle explicit 3D cache.
 - What it does not solve: remains a memory/interface advance inside a video-generation stack, not a strong explicit-state model of action-grounded dynamics.
 
+### EgoSim (2026)
+- Positioning: egocentric world simulation built around an updateable 3D scene state rather than static scene assumptions or pure video continuation.
+- What it gets right: persistence is implemented at the representation level, so multi-stage interaction has an explicit place to live besides frame history.
+- What it does not solve: it is still unclear how physically faithful and reusable the learned state really is beyond visually consistent interaction generation.
+
 ### ActionParty (2026)
 - Positioning: multi-subject video world model with persistent per-subject latent state for explicit action binding.
 - What it gets right: treats action-to-entity assignment as a first-class architectural problem instead of assuming prompts or shared controls will implicitly preserve identity.
@@ -173,6 +178,11 @@ The stronger papers usually satisfy at least one of these:
 - Positioning: world modeling with explicit algebraic latent transitions implemented through vector-symbolic binding.
 - What it gets right: the transition rule is structured, composable, and interpretable in a literal sense rather than metaphorical “modularity.”
 - What it does not solve: evidence is still confined to a toy discrete environment, so the scaling story to realistic perception and stochastic dynamics is unresolved.
+
+### PRISM-WM (2025)
+- Positioning: planning-oriented world model that decomposes hybrid dynamics into mode-specialized transition experts.
+- What it gets right: puts structure exactly where monolithic latent dynamics fail most, at contact- or event-driven regime changes that punish long-horizon planning.
+- What it does not solve: expert specialization may remain implicit and hard to interpret, and the scaling path to perception-heavy robotics is still open.
 
 ### VEGA-3D / Generation Models Know Space (2026)
 - Positioning: 3D understanding by borrowing intermediate geometric priors from large pretrained video generators.
