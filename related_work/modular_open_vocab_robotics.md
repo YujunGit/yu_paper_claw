@@ -14,12 +14,17 @@ The interesting question is not whether a robot can ingest language and images. 
 
 A lot of recent work uses modular language while still hiding most reasoning inside a large policy. That can work, but it makes mechanism claims harder to trust. The more useful papers are the ones that expose interfaces and failure boundaries.
 
-## Current anchor paper
+## Current anchor papers
 
 ### TiPToP (2026)
 - Positioning: planning-first hybrid system using pretrained perception and explicit symbolic goal grounding.
 - What it gets right: clear module interfaces, good task-category evaluation, strong failure analysis, cross-embodiment portability evidence.
 - What it does not solve: reactive robustness, uncertainty handling, strong 3D scene completion.
+
+### Grounded World Model (2026)
+- Positioning: world-model-based MPC where candidate futures are scored in a vision-language-aligned latent space against task instructions rather than a goal image.
+- What it gets right: places semantic grounding inside the planning objective itself, which is a stronger interface claim than using language only for front-end conditioning.
+- What it does not solve: current evidence still appears bounded to motions seen in training, and the robustness story under long-horizon replanning or uncertainty remains unclear.
 
 ## Working heuristics for future scouting
 Prefer papers that satisfy at least two of the following:
