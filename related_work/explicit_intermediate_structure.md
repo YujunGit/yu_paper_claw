@@ -59,10 +59,20 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: the intermediate structure has a concrete job—keeping long-horizon plans coherent while still grounding them for control.
 - What it does not solve: much of the symbolic interface is still curated and annotated rather than learned.
 
+### Hierarchical Planning with Latent World Models / HWM (2026)
+- Positioning: plug-in hierarchical MPC over pretrained latent world models, with high-level latent subgoals passed directly to low-level planning.
+- What it gets right: adds temporal structure at inference time instead of requiring hierarchical policies or skill libraries, and shows a real payoff on non-greedy long-horizon control.
+- What it does not solve: the subgoal interface is still a soft latent, so interpretability and explicit compositional semantics remain limited.
+
 ### C3 (2025/2026)
 - Positioning: uncertainty-calibrated controllable video world models.
 - What it gets right: asks whether the world model knows when its own rollout is untrustworthy, which is a missing piece in many planning papers.
 - What it does not solve: uncertainty estimates are only useful if they change downstream decision-making, not just visualization.
+
+### World Action Verifier / WAV (2026)
+- Positioning: self-improving world-model framework that verifies predictions through a decomposition into plausible future states and action-consistent reachability.
+- What it gets right: treats verification as an easier structured problem than dense forward prediction, and exploits the asymmetry between abundant action-free video and scarce action-labeled data.
+- What it does not solve: the verifier still depends on learned subgoal and inverse modules whose own brittleness may surface in harder open-world settings.
 
 ### NSGGM (2026)
 - Positioning: neural proposal plus symbolic assembly for graph generation with hard guarantees.
