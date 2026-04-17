@@ -64,6 +64,11 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: adds temporal structure at inference time instead of requiring hierarchical policies or skill libraries, and shows a real payoff on non-greedy long-horizon control.
 - What it does not solve: the subgoal interface is still a soft latent, so interpretability and explicit compositional semantics remain limited.
 
+### Compositional Planning with Jumpy World Models (2026)
+- Positioning: planning over temporally extended pretrained policies using multi-timescale occupancy-style predictive models.
+- What it gets right: matches the world-model granularity to the planner’s temporal abstraction, instead of asking primitive-step dynamics to support policy-level composition for free.
+- What it does not solve: compositionality remains bounded by the quality and coverage of the pretrained policy library.
+
 ### C3 (2025/2026)
 - Positioning: uncertainty-calibrated controllable video world models.
 - What it gets right: asks whether the world model knows when its own rollout is untrustworthy, which is a missing piece in many planning papers.
@@ -73,6 +78,11 @@ The stronger papers usually satisfy at least one of these:
 - Positioning: self-improving world-model framework that verifies predictions through a decomposition into plausible future states and action-consistent reachability.
 - What it gets right: treats verification as an easier structured problem than dense forward prediction, and exploits the asymmetry between abundant action-free video and scarce action-labeled data.
 - What it does not solve: the verifier still depends on learned subgoal and inverse modules whose own brittleness may surface in harder open-world settings.
+
+### World-Value-Action Model / WAV (2026)
+- Positioning: VLA decision-making framework that moves planning from direct action prediction into latent future inference scored by a value model.
+- What it gets right: makes the internal planning interface explicit and ties feasibility plus long-horizon utility to the search space itself rather than bolting them on afterward.
+- What it does not solve: the latent future interface may still be opaque, and it is not yet clear how much of the gain comes from real planning versus better learned action regularization.
 
 ### NSGGM (2026)
 - Positioning: neural proposal plus symbolic assembly for graph generation with hard guarantees.
@@ -93,6 +103,11 @@ The stronger papers usually satisfy at least one of these:
 - Positioning: benchmark for visually grounded deep compositional reasoning built around a verifiable programmatic intermediate representation.
 - What it gets right: uses intermediate structure for mechanical verification and tests deep chained conditions rather than shallow composition.
 - What it does not solve: it is evaluation infrastructure, not a mechanism for improving model reasoning or grounding.
+
+### Behavior Consistency in Text-Based World Models (2026)
+- Positioning: behavior-aligned world-model training where fidelity is judged by preserving downstream action preferences, not just next-state matching.
+- What it gets right: asks what a world model should be faithful to for planning and evaluation, and replaces surface-form accuracy with a more use-oriented criterion.
+- What it does not solve: the metric inherits the blind spots of the frozen reference agent and is only demonstrated in relatively clean text environments.
 
 ### CoWVLA / Chain of World (2026)
 - Positioning: VLA pretraining built around structure–motion disentanglement and a continuous latent motion chain instead of dense future-frame reconstruction.
