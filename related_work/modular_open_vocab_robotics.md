@@ -26,6 +26,11 @@ A lot of recent work uses modular language while still hiding most reasoning ins
 - What it gets right: places semantic grounding inside the planning objective itself, which is a stronger interface claim than using language only for front-end conditioning.
 - What it does not solve: current evidence still appears bounded to motions seen in training, and the robustness story under long-horizon replanning or uncertainty remains unclear.
 
+### ADAPT (2026)
+- Positioning: embodied planning benchmark plus plug-in affordance-reasoning layer for tasks where crucial object-state constraints are not stated in the instruction.
+- What it gets right: turns hidden preconditions into an explicit interface problem instead of blaming all failures on weak end-to-end policies.
+- What it does not solve: likely still depends on benchmark-bounded affordance categories, and it is unclear how well the approach handles open-ended real-world uncertainty.
+
 ## Working heuristics for future scouting
 Prefer papers that satisfy at least two of the following:
 - explicit intermediate representation between language/perception and action,

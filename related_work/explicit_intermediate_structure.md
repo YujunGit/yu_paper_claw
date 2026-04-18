@@ -229,6 +229,11 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: recognizes that controllability should be stronger where evidence is known and softer where the model must complete ambiguous geometry.
 - What it does not solve: this is better viewed as a carefully designed conditioning interface for constrained completion than as a broad structured 3D world model.
 
+### Learning Ad Hoc Network Dynamics via Graph-Structured World Models / G-RSSM (2026)
+- Positioning: graph-structured recurrent state-space model with per-node latent state and cross-node attention, used for imagined-rollout decision making.
+- What it gets right: keeps the latent interface aligned with the entity structure of the task instead of flattening interacting units into one state vector.
+- What it does not solve: evidence is in a relatively clean network-control domain, so transfer to perception-heavy embodied settings remains unproven.
+
 ## Working heuristics for future scouting
 Prefer papers that do at least two of the following:
 - make the intermediate structure executable or constraining,
