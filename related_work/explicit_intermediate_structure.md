@@ -234,6 +234,21 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: keeps the latent interface aligned with the entity structure of the task instead of flattening interacting units into one state vector.
 - What it does not solve: evidence is in a relatively clean network-control domain, so transfer to perception-heavy embodied settings remains unproven.
 
+### Lyra 2.0 (2026)
+- Positioning: long-horizon generative 3D world system that uses explicit geometry as an information-routing scaffold for persistent exploration.
+- What it gets right: geometry is not asked to directly render the future; it retrieves relevant history and establishes correspondences while synthesis stays in the generative prior.
+- What it does not solve: persistence is still mostly geometric and observational, not an explicit action-grounded world state with object-level causality.
+
+### ShapeGen (2026)
+- Positioning: real-to-real robotic data generation through function-aware dense geometric correspondence across category-level object shapes.
+- What it gets right: the intermediate structure is a reusable correspondence space that actually governs how affordances transfer to new objects.
+- What it does not solve: the structure is still library-based and category-curated, so scaling to messy open-world manipulation remains hard.
+
+### Structure- and Stability-Preserving Learning of Port-Hamiltonian Systems (2026)
+- Positioning: physics-structured system identification that preserves multiple stable equilibria instead of only fitting trajectories under a generic energy prior.
+- What it gets right: ties structure to a real guarantee, namely stability behavior around multiple equilibria, rather than using physics language decoratively.
+- What it does not solve: evidence is still small-scale and far from perception-heavy learned world models.
+
 ## Working heuristics for future scouting
 Prefer papers that do at least two of the following:
 - make the intermediate structure executable or constraining,
