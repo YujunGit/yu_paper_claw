@@ -209,6 +209,16 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: puts structure exactly where monolithic latent dynamics fail most, at contact- or event-driven regime changes that punish long-horizon planning.
 - What it does not solve: expert specialization may remain implicit and hard to interpret, and the scaling path to perception-heavy robotics is still open.
 
+### Occupancy Reward Shaping / ORS (2026)
+- Positioning: world-model-based reward shaping that extracts long-horizon reachability geometry from an occupancy model rather than using the model only for rollout or latent features.
+- What it gets right: turns structure into a better learning signal, which is a stronger use of a world model than simply claiming temporal information is “present in the latent.”
+- What it does not solve: the method still depends on the fidelity and tractability of the learned occupancy geometry, which may get messy in partially observed or highly multimodal domains.
+
+### Mask World Model / MWM (2026)
+- Positioning: robot world model that predicts future semantic masks instead of RGB frames, then conditions control on mask-centric predictive features.
+- What it gets right: puts the bottleneck in the predictive target itself, forcing the model to care more about geometry and interaction structure than photometric detail.
+- What it does not solve: semantic masks are a useful bottleneck, but still stop short of richer object-, contact-, or causal-state structure.
+
 ### VEGA-3D / Generation Models Know Space (2026)
 - Positioning: 3D understanding by borrowing intermediate geometric priors from large pretrained video generators.
 - What it gets right: asks where useful geometric information actually lives inside generative backbones and supports that with a multi-view consistency analysis.
