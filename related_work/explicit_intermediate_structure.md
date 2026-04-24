@@ -254,6 +254,16 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: the intermediate structure is a reusable correspondence space that actually governs how affordances transfer to new objects.
 - What it does not solve: the structure is still library-based and category-curated, so scaling to messy open-world manipulation remains hard.
 
+### Composed Parallel Token Prediction / CPTP (2026)
+- Positioning: discrete generative modeling with an explicit algebra for composing multiple conditions, including weighting and negation, inside iterative token prediction.
+- What it gets right: treats controllability as composition of predictive distributions rather than prompt-level wishful thinking, and keeps the interface compatible with fast discrete latent generation.
+- What it does not solve: the composition rule relies on approximate conditional-independence assumptions and is mostly validated in controlled compositional settings rather than messy open-world generation.
+
+### Any 3D Scene Is Worth 1K Tokens / 3DRAE + 3DDiT (2026)
+- Positioning: scene generation directly in a compact 3D latent space rather than in multiview 2D or video latents.
+- What it gets right: changes the representation so scene complexity tracks actual 3D structure rather than the number of rendered views, making spatial consistency a property of the latent interface rather than an emergent hope.
+- What it does not solve: the fixed-length latent may become a bottleneck in richer dynamic scenes, and action-grounded persistent state is still outside the current scope.
+
 ### Structure- and Stability-Preserving Learning of Port-Hamiltonian Systems (2026)
 - Positioning: physics-structured system identification that preserves multiple stable equilibria instead of only fitting trajectories under a generic energy prior.
 - What it gets right: ties structure to a real guarantee, namely stability behavior around multiple equilibria, rather than using physics language decoratively.
