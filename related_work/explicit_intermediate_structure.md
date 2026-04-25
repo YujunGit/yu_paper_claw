@@ -269,6 +269,26 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: ties structure to a real guarantee, namely stability behavior around multiple equilibria, rather than using physics language decoratively.
 - What it does not solve: evidence is still small-scale and far from perception-heavy learned world models.
 
+### Quotient-Space Diffusion Models (2026)
+- Positioning: generative modeling on the intrinsic quotient space rather than the ambient space with symmetry-aware patches.
+- What it gets right: removes nuisance group motion from the learning problem itself, which is a deeper use of structure than plain equivariance or post hoc alignment.
+- What it does not solve: assumes known and tractable symmetry structure, with an unclear path to approximate or learned equivalence classes.
+
+### Hi-WM (2026)
+- Positioning: world model used as a reusable corrective workspace for human-guided robot post-training.
+- What it gets right: gives intermediate state real operational value through rollback and branching around failure states, instead of using the world model only for passive rollout or ranking.
+- What it does not solve: depends heavily on model fidelity near exactly the failure regions that matter most.
+
+### eSEC-LAM (2026)
+- Positioning: manipulation understanding through an explicit event-level symbolic state enriched with confidence, affordances, roles, and primitive structure.
+- What it gets right: the symbolic state directly supports next-step reasoning and explanations, so the structure is functional rather than decorative.
+- What it does not solve: the representation appears engineered and domain-shaped, with uncertain scaling to open-world manipulation.
+
+### Pi-PINN / Closed-Form Head Adaptation (2026)
+- Positioning: transferable physics-informed representation with cheap pseudoinverse adaptation for new PDE instances.
+- What it gets right: separates reusable structure from task-specific solving, making adaptation itself explicit and constrained.
+- What it does not solve: current evidence looks strongest in relatively clean PDE families, and transfer to richer scientific settings remains open.
+
 ## Working heuristics for future scouting
 Prefer papers that do at least two of the following:
 - make the intermediate structure executable or constraining,
