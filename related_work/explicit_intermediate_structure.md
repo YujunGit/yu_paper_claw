@@ -119,6 +119,11 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: the intermediate structure is executable, state-dependent, and necessary; high-level intent and low-level entity binding are cleanly separated.
 - What it does not solve: the mechanism is strong but domain-specific, and transfer beyond CAD will require additional grounding machinery.
 
+### Zero-to-CAD (2026)
+- Positioning: tool-validated agentic synthesis of executable CAD construction sequences, used to create large synthetic corpora for editable CAD learning.
+- What it gets right: treats structured procedures as the thing to generate, and uses execution plus environment feedback to make synthetic supervision materially more trustworthy than plain text-only generation.
+- What it does not solve: execution-valid programs are not guaranteed to reflect realistic human design intent, and the "agentic" search loop may hide substantial cost or narrow synthetic priors.
+
 ### Reasoning Core (2026)
 - Positioning: procedural symbolic-data infrastructure with solver-backed verification and broad formal-task distributions.
 - What it gets right: argues that explicit structure in training data should be distributionally broad, difficulty-controlled, and reusable for both supervised learning and verifiable reward.
