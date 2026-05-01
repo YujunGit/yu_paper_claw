@@ -39,6 +39,11 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: tries to learn the abstraction layer itself and judges it by sample efficiency, OOD planning, and interpretability.
 - What it does not solve: robustness under noisy real-world perception remains unclear.
 
+### OneLife (2026)
+- Positioning: symbolic world modeling as probabilistic inference over conditionally activated executable laws learned from minimal unguided exploration.
+- What it gets right: the intermediate structure is modular, executable, sparse, and actually used for prediction and planning under stochasticity instead of serving as post hoc explanation.
+- What it does not solve: the state interface is still privileged symbolic structure, so the harder perception-to-law induction problem remains open.
+
 ### RISE (2026)
 - Positioning: robot policy improvement via a compositional world model split into dynamics prediction and progress evaluation.
 - What it gets right: decomposition corresponds to distinct control functions rather than decorative modularity.
