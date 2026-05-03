@@ -184,6 +184,21 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: persistence is implemented at the representation level, so multi-stage interaction has an explicit place to live besides frame history.
 - What it does not solve: it is still unclear how physically faithful and reusable the learned state really is beyond visually consistent interaction generation.
 
+### SpatialGrammar (2026)
+- Positioning: text-to-3D indoor scene generation through a compact executable spatial DSL with deterministic compilation and compiler-driven repair.
+- What it gets right: the intermediate structure is genuinely model-facing and machine-checkable; the compiler does real work by validating collisions, support, and hierarchical layout constraints.
+- What it does not solve: the representation is deliberately narrow and gravity-aligned, so it is more a strong domain-specific interface than a general solution to 3D spatial reasoning.
+
+### Generative Structure Search / GSS (2026)
+- Positioning: hybrid generative-plus-physical search for molecular and crystal structures, where diffusion guidance and energy-based relaxation are two terms in one update rule.
+- What it gets right: it treats learned priors and explicit grounded search as complementary mechanisms instead of separate stages, and makes physical validity part of the sampling dynamics rather than post hoc filtering.
+- What it does not solve: transferability outside inverse-design settings is conceptual rather than demonstrated, and success depends on the quality of the force-field side of the loop.
+
+### PhyCo (2026)
+- Positioning: controllable video generation conditioned on explicit spatial maps of physical properties, followed by physics-targeted VLM reward alignment.
+- What it gets right: physical attributes are represented as interpretable control variables rather than vague prompt intentions, so the structure meaningfully constrains what motion should look like.
+- What it does not solve: this is still mostly controllable generation, not a strong explicit-state world model for intervention, planning, or long-horizon causal reasoning.
+
 ### ActionParty (2026)
 - Positioning: multi-subject video world model with persistent per-subject latent state for explicit action binding.
 - What it gets right: treats action-to-entity assignment as a first-class architectural problem instead of assuming prompts or shared controls will implicitly preserve identity.
