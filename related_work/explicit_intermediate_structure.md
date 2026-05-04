@@ -314,6 +314,26 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: separates reusable structure from task-specific solving, making adaptation itself explicit and constrained.
 - What it does not solve: current evidence looks strongest in relatively clean PDE families, and transfer to richer scientific settings remains open.
 
+### Being-H0.7 (2026)
+- Positioning: latent world-action model that replaces future-frame rollout with a compact latent reasoning interface trained by prior/posterior alignment.
+- What it gets right: makes the predictive bottleneck action-facing rather than video-facing, so future supervision is used to shape control-relevant state instead of visual reconstruction.
+- What it does not solve: the learned latent interface is still soft and only partially interpretable, so this is not yet explicit persistent world state.
+
+### Map2World (2026)
+- Positioning: large-scale 3D world generation through arbitrary segment-map conditioning plus structured-latent fusion.
+- What it gets right: gives users a real spatial control interface and uses latent-space coordination to preserve world-scale coherence beyond grid tiling.
+- What it does not solve: structure is still coarse region-level control rather than richer object-relation or dynamic world modeling.
+
+### PredictiveGraphs (2026)
+- Positioning: open-vocabulary 3D scene graph with Bayesian persistence estimators attached to object relations for forecasting semi-static world change.
+- What it gets right: upgrades semantic mapping from present-tense memory into future-queryable structured state.
+- What it does not solve: the dynamics are routine-driven and semi-static, far easier than contact-rich embodied interaction.
+
+### InpaintSLat (2026)
+- Positioning: structured 3D latent inpainting where initialization itself is optimized as a control variable.
+- What it gets right: identifies the initial latent seed as part of the mechanism, not just random nuisance, and shows controllability can start before denoising guidance.
+- What it does not solve: this is a sharp local control trick, not a broader account of compositional scene or world generation.
+
 ## Working heuristics for future scouting
 Prefer papers that do at least two of the following:
 - make the intermediate structure executable or constraining,
