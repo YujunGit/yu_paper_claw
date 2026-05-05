@@ -259,6 +259,16 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: treats discreteness, bit independence, and sparse action-local transitions as properties to optimize directly rather than probe after training.
 - What it does not solve: current evidence appears strongest on small combinatorial environments, so the path to realistic perceptual world models is still unclear.
 
+### When Attention Collapses / Residual Evidence Modeling (2026)
+- Positioning: compositional inference under additive superposition, repaired by explicit residual evidence state across slots.
+- What it gets right: identifies a specific structural failure of ordinary attention—competition without memory of what has already been explained—and fixes it with a tiny but meaningful stateful mechanism.
+- What it does not solve: the strongest argument is for additive-mixture settings; richer object-, causal-, or hierarchical residual structure remains open.
+
+### PRCD-MAP (2026)
+- Positioning: prior-aware causal discovery with learned heterogeneous trust over imperfect external structure.
+- What it gets right: treats the intermediate structure not as the prior graph alone, but as a calibrated trust layer that decides where that prior should actually constrain learning.
+- What it does not solve: the idea is strong, but current evidence is still concentrated in causal-discovery settings rather than broader generation or planning systems.
+
 ### RelaxFlow (2026)
 - Positioning: amodal 3D generation with asymmetric control over observed versus unobserved structure.
 - What it gets right: recognizes that controllability should be stronger where evidence is known and softer where the model must complete ambiguous geometry.
