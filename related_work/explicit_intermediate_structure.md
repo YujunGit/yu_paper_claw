@@ -334,10 +334,20 @@ The stronger papers usually satisfy at least one of these:
 - What it gets right: gives users a real spatial control interface and uses latent-space coordination to preserve world-scale coherence beyond grid tiling.
 - What it does not solve: structure is still coarse region-level control rather than richer object-relation or dynamic world modeling.
 
-### PredictiveGraphs (2026)
-- Positioning: open-vocabulary 3D scene graph with Bayesian persistence estimators attached to object relations for forecasting semi-static world change.
-- What it gets right: upgrades semantic mapping from present-tense memory into future-queryable structured state.
-- What it does not solve: the dynamics are routine-driven and semi-static, far easier than contact-rich embodied interaction.
+### HaM-World (2026)
+- Positioning: planner-facing world model with a selective-memory latent split into canonical q/p dynamics and semantic/non-conservative context.
+- What it gets right: the structure is attached to the same latent state used for rollout, value prediction, and action search, so it can be judged by stability and OOD control rather than interpretability theater.
+- What it does not solve: the evidence is still in controlled continuous-control tasks, not raw-visual or contact-rich robotics.
+
+### Reconstruction or Semantics? (2026)
+- Positioning: evaluation paper on whether robotic diffusion world models should use reconstruction latents or semantic foundation-model latents.
+- What it gets right: it tests latent structure by policy-facing usefulness, action recoverability, and task semantics rather than by photometric quality alone.
+- What it does not solve: it does not itself provide the next latent design; it mostly sharpens evaluation and latent-selection criteria.
+
+### Hitting Time Isomorphism / IEL (2026)
+- Positioning: representation-learning theory for multi-stage planning based on directed temporal geometry from hitting times.
+- What it gets right: makes compositional planning structure explicit by preserving progress-to-goal asymmetry rather than flattening everything into symmetric similarity.
+- What it does not solve: current empirical evidence is still benchmark-bounded and far from high-dimensional embodied world modeling.
 
 ### InpaintSLat (2026)
 - Positioning: structured 3D latent inpainting where initialization itself is optimized as a control variable.
